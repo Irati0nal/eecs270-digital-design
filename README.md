@@ -61,6 +61,10 @@ vivado -mode batch -source scripts/build.tcl -tclargs 7 bitstream
 
 Replace `7` with any number from `1` to `7`. The target is `xc7a35tcpg236-1`. Build outputs, reports, and the bitstream appear in `build/<project-name>/`. Open Vivado Hardware Manager and select the generated `.bit` file to program your connected board. See [hardware notes](docs/HARDWARE.md) for controls, wiring and timing assumptions.
 
+## Validated results
+
+All seven projects pass self-checking simulation and complete Vivado bitstream generation. Implementation DRC reports contain zero findings. All four clocked designs meet their 100 MHz clock timing constraint. The [verification report](docs/VERIFICATION.md) includes actual resource counts and routed timing margins, plus the limits of these checks.
+
 ## Repository guide
 
 ```text

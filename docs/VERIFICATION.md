@@ -4,7 +4,7 @@ Validation date: 2026-09-28. The automated suite uses Icarus Verilog 11.0 and Py
 
 ## Simulation
 
-`python3 scripts/test.py` elaborates each synthesis top independently, then compiles and executes its self-checking testbench. All seven simulations passed locally. A failed assertion or timeout returns a nonzero exit code.
+`python3 scripts/test.py` elaborates each synthesis top independently, then compiles and executes its self-checking testbench. All seven simulations passed locally and in [GitHub Actions](https://github.com/Irati0nal/eecs270-digital-design/actions/runs/36477111673). A failed assertion or timeout returns a nonzero exit code.
 
 | Project | Checks |
 | --- | --- |
@@ -20,7 +20,21 @@ Simulation parameters shorten human-scale intervals. These tests check logical b
 
 ## FPGA tools
 
-Lab 7 synthesis completed with no errors or critical warnings. The complete seven-project implementation run is being recorded separately; additional results will be included once that run completes. Build products remain in the ignored `build/` directory.
+All seven projects completed synthesis, placement, routing and bitstream generation with **zero implementation DRC findings**. The four clocked designs (Labs 4–7) meet the specified 100 MHz clock timing, with no failing setup, hold or pulse-width endpoints in their routed timing summaries.
+
+| Project | Synthesis LUTs | Synthesis registers | Routed WNS (ns) | Routed WHS (ns) | Bitstream |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 0 | NA | NA | Generated |
+| 2 | 4 | 0 | NA | NA | Generated |
+| 3 | 8 | 0 | NA | NA | Generated |
+| 4 | 16 | 32 | 5.816 | 0.122 | Generated |
+| 5 | 30 | 56 | 6.072 | 0.160 | Generated |
+| 6 | 104 | 93 | 3.334 | 0.042 | Generated |
+| 7 | 68 | 92 | 4.805 | 0.124 | Generated |
+
+LUT/register counts are from the **post-synthesis** utilization report. WNS/WHS are routed worst setup/hold slack; positive slack meets the specified clock constraint. Labs 1–3 are combinational switch-to-output designs without a clock or an external synchronous I/O timing requirement, so Vivado reports NA for clock slack. This is not a measured maximum operating frequency.
+
+The final device intentionally ignores SW4–SW13; Vivado reports those unused inputs during synthesis. The build does not suppress DRC errors. Board voltage properties are explicitly set. The scripts retain bitstreams and complete reports under the ignored `build/` directory; [machine-readable evidence](build-evidence.json) records report values, generated bitstream hashes and source hashes without publishing machine-specific log paths.
 
 ## Continuous integration
 

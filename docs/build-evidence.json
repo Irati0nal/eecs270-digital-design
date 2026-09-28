@@ -1,0 +1,310 @@
+{
+  "date": "2026-09-28",
+  "tool": "AMD Vivado 2025.2",
+  "part": "xc7a35tcpg236-1",
+  "simulator": "Icarus Verilog 11.0",
+  "simulation": "All seven projects passed",
+  "timing_summary_columns": [
+    "WNS_ns",
+    "TNS_ns",
+    "setup_failing_endpoints",
+    "setup_total_endpoints",
+    "WHS_ns",
+    "THS_ns",
+    "hold_failing_endpoints",
+    "hold_total_endpoints",
+    "WPWS_ns",
+    "TPWS_ns",
+    "pulse_width_failing_endpoints",
+    "pulse_width_total_endpoints"
+  ],
+  "builds": [
+    {
+      "lab": 1,
+      "top": "full_adder",
+      "synth_luts": 1,
+      "synth_registers": 0,
+      "bitstream_bytes": 2192134,
+      "bitstream_sha256": "2226257aca43207b1827c105ca3e83d4d4535801037940cc63c0889c357880c7",
+      "drc_checks_found": 0,
+      "timing_summary_fields": [
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "lab": 2,
+      "top": "bcd_display",
+      "synth_luts": 4,
+      "synth_registers": 0,
+      "bitstream_bytes": 2192135,
+      "bitstream_sha256": "7afdeb62f78e0f65f451ae6047975187e791b23228c1ee7affb38ebbb76b2d30",
+      "drc_checks_found": 0,
+      "timing_summary_fields": [
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "lab": 3,
+      "top": "alu4",
+      "synth_luts": 8,
+      "synth_registers": 0,
+      "bitstream_bytes": 2192128,
+      "bitstream_sha256": "78c55ddf2f4048ba8fb2b177e54b3d3590e6cb9a9b8dd117cfc36ef713c72daf",
+      "drc_checks_found": 0,
+      "timing_summary_fields": [
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA",
+        "NA"
+      ]
+    },
+    {
+      "lab": 4,
+      "top": "top",
+      "synth_luts": 16,
+      "synth_registers": 32,
+      "bitstream_bytes": 2192127,
+      "bitstream_sha256": "8ce94d6a60ba3801f42c1e115e2a1b30f02ab84d51ed175d7b63913094db0e50",
+      "drc_checks_found": 0,
+      "timing_summary_fields": [
+        "5.816",
+        "0.000",
+        "0",
+        "61",
+        "0.122",
+        "0.000",
+        "0",
+        "61",
+        "4.500",
+        "0.000",
+        "0",
+        "33"
+      ]
+    },
+    {
+      "lab": 5,
+      "top": "digital_clock",
+      "synth_luts": 30,
+      "synth_registers": 56,
+      "bitstream_bytes": 2192137,
+      "bitstream_sha256": "65b3db8301b96880f4e0716063be921a4e1d4c8d85636ae8081d34ebfb42030e",
+      "drc_checks_found": 0,
+      "timing_summary_fields": [
+        "6.072",
+        "0.000",
+        "0",
+        "115",
+        "0.160",
+        "0.000",
+        "0",
+        "115",
+        "4.500",
+        "0.000",
+        "0",
+        "57"
+      ]
+    },
+    {
+      "lab": 6,
+      "top": "top_keypad_system",
+      "synth_luts": 104,
+      "synth_registers": 93,
+      "bitstream_bytes": 2192141,
+      "bitstream_sha256": "40006addbed4b68069fb912e754f24d9b24fbbbbb7dc9ba6dda512e064b17f0c",
+      "drc_checks_found": 0,
+      "timing_summary_fields": [
+        "3.334",
+        "0.000",
+        "0",
+        "217",
+        "0.042",
+        "0.000",
+        "0",
+        "217",
+        "4.500",
+        "0.000",
+        "0",
+        "94"
+      ]
+    },
+    {
+      "lab": 7,
+      "top": "top_lab7",
+      "synth_luts": 68,
+      "synth_registers": 92,
+      "bitstream_bytes": 2192132,
+      "bitstream_sha256": "241f78ffc944fe39e53af6e5a94de08f7a60db0409c6fdfdf12679ac5fdea4a3",
+      "drc_checks_found": 0,
+      "timing_summary_fields": [
+        "4.805",
+        "0.000",
+        "0",
+        "180",
+        "0.124",
+        "0.000",
+        "0",
+        "180",
+        "4.500",
+        "0.000",
+        "0",
+        "93"
+      ]
+    }
+  ],
+  "source_hashes": [
+    {
+      "file": ".Xil/top_lab7_propImpl.xdc",
+      "sha256": "63e9cb2588d2537009d1bccd94c41dfcacb63d495ffcf27b08d760250a41cd7b"
+    },
+    {
+      "file": "projects/lab01-full-adder/constraints/basys3.xdc",
+      "sha256": "f004e27cd537847affa17c550cc9c728419f792df4ec33f999da12830459eb17"
+    },
+    {
+      "file": "projects/lab01-full-adder/rtl/full_adder.v",
+      "sha256": "b6ed415fe3b4bf4525e59ac5c2b6078ebd7a2098ceb7e47127701013df10a455"
+    },
+    {
+      "file": "projects/lab01-full-adder/sim/tb_lab1.sv",
+      "sha256": "ac2bdce799c84c5f6903a7ca2b5ab05a6ef88562a9c7b0c37d2d5d0db645f731"
+    },
+    {
+      "file": "projects/lab02-seven-segment/constraints/basys3.xdc",
+      "sha256": "1c03fce97a6e53f5f2f6a777e9ef23c24cc8f8ae49c17abb58188f82122e106e"
+    },
+    {
+      "file": "projects/lab02-seven-segment/rtl/bcd_display.v",
+      "sha256": "6e777387804f8145b9f06bfb120f8a7f835b782c6d7449ba3bd02b82c7401d7e"
+    },
+    {
+      "file": "projects/lab02-seven-segment/sim/tb_lab2.sv",
+      "sha256": "627de3df4de9e1dd70f07729edc79276def0a02fadd9babb0da46302dc7b24f9"
+    },
+    {
+      "file": "projects/lab03-alu/constraints/basys3.xdc",
+      "sha256": "9e1d6caebf0848187a33f36be0e5dd7d56cf45736e42293317a4e197d9b8838a"
+    },
+    {
+      "file": "projects/lab03-alu/rtl/alu4.v",
+      "sha256": "5f420c57c208da44dee8259d571331563c84be44e51b5d4f3595091ac7fdfdfb"
+    },
+    {
+      "file": "projects/lab03-alu/sim/tb_lab3.sv",
+      "sha256": "b62800ca1a02ad3d681a43b9ae4cacb040fd12d98051d167d7467dcb899934e9"
+    },
+    {
+      "file": "projects/lab04-counter/constraints/basys3.xdc",
+      "sha256": "4164730f06ffeb5aaabc8c618715ac4944b06a2ebdd6bcb7f4dd53f57e9c2134"
+    },
+    {
+      "file": "projects/lab04-counter/rtl/counter.v",
+      "sha256": "47638d0964f88ab0d1210a344110e8263f7c7219254c612399cfcc97aaba7a13"
+    },
+    {
+      "file": "projects/lab04-counter/rtl/top.v",
+      "sha256": "7da5dcb7c79dd6bb1210080d63ea569f005e08e8754177b0586313baf495422d"
+    },
+    {
+      "file": "projects/lab04-counter/sim/tb_lab4.sv",
+      "sha256": "935fddaeef6b57b0b761655da269ec507a6a49767782011ca1eae8b830b9d980"
+    },
+    {
+      "file": "projects/lab05-digital-clock/constraints/basys3.xdc",
+      "sha256": "be1c4a3a6c98231c5605b700ca9269ec02daba3915b99340902d3050cc236106"
+    },
+    {
+      "file": "projects/lab05-digital-clock/rtl/digital_clock.v",
+      "sha256": "14d6fedc7be09a7ce107f8777cae913026480bd0d48e4fc91426b984b568f0b2"
+    },
+    {
+      "file": "projects/lab05-digital-clock/sim/tb_lab5.sv",
+      "sha256": "a6f002c704847676e62eb6a7c91b1e50b0351e68cbb507911be4825d5c7df6f1"
+    },
+    {
+      "file": "projects/lab06-keypad/constraints/basys3.xdc",
+      "sha256": "c5bb524f7bf5c70e9e2e621c5933db92be115a50648a8c088df25cc432f3f920"
+    },
+    {
+      "file": "projects/lab06-keypad/rtl/keypad_scanner.v",
+      "sha256": "401a6440134f8ebef6a33207f4450c2dd7d815b0745480810b9a0d338d937016"
+    },
+    {
+      "file": "projects/lab06-keypad/rtl/top_keypad_system.v",
+      "sha256": "8fde82b1a01621bb2a33e8ab246eb117572dd0e1c1367732b116b709be24f303"
+    },
+    {
+      "file": "projects/lab06-keypad/sim/tb_lab6.sv",
+      "sha256": "fbc97f524c41f2d1bd19b522677fef1b89e0b1b5c04187b26af57b753fd5d84d"
+    },
+    {
+      "file": "projects/lab07-digital-device/constraints/basys3.xdc",
+      "sha256": "4e0fc75acae094de4d1365c8f06c171217761ae4551f2647171126a54a11e846"
+    },
+    {
+      "file": "projects/lab07-digital-device/rtl/calculator.v",
+      "sha256": "f367bcef1df2d430fceabaa50567bcfbe7b987502e5ab9ee8564b92e4a811410"
+    },
+    {
+      "file": "projects/lab07-digital-device/rtl/top_lab7.v",
+      "sha256": "52ee2b36a3bfa62f123d84723eae730b49256f3c5f8d743a7bd6bc866a70541b"
+    },
+    {
+      "file": "projects/lab07-digital-device/sim/tb_lab7.sv",
+      "sha256": "5306dbcb4944a5e49ed42b1975a0582aac09bc196a7ae774f7cfac369368d095"
+    },
+    {
+      "file": "rtl/common/button.v",
+      "sha256": "dcdd2e45de2109c7a56c7588ba5ece010a6300dcd127e0b1f8e7a812c062df4f"
+    },
+    {
+      "file": "rtl/common/display_mux.v",
+      "sha256": "da351c00521bcf99cf91390f20bdc39beb70e665d3db357c3b20916c66bf953f"
+    },
+    {
+      "file": "rtl/common/input_sync.v",
+      "sha256": "e867562d85f21e327e6e8cc3c2e2cb627cd8aa745edece98e20054f02793d7ce"
+    },
+    {
+      "file": "rtl/common/reset_sync.v",
+      "sha256": "79be82c1da716ef88181486ec73fcada1aa1bc25faa3bc01d67c352414946f57"
+    },
+    {
+      "file": "rtl/common/seven_segment.v",
+      "sha256": "a62424075402a8ab03ebc2134ed17ee5be64738b1bddc8cdea6a2842dbe73b0b"
+    },
+    {
+      "file": "scripts/build.tcl",
+      "sha256": "d37b5526f7c8a1480b1d8f36a1293d05912167ae4a0f19380aeaed23ff7e28eb"
+    }
+  ]
+}
