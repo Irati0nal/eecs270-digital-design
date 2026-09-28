@@ -1,0 +1,37 @@
+{
+  "1": {
+    "directory": "projects/lab01-full-adder",
+    "top": "full_adder",
+    "testbench": "tb_lab1"
+  },
+  "2": {
+    "directory": "projects/lab02-seven-segment",
+    "top": "bcd_display",
+    "testbench": "tb_lab2"
+  },
+  "3": {
+    "directory": "projects/lab03-alu",
+    "top": "alu4",
+    "testbench": "tb_lab3"
+  },
+  "4": {
+    "directory": "projects/lab04-counter",
+    "top": "top",
+    "testbench": "tb_lab4"
+  },
+  "5": {
+    "directory": "projects/lab05-digital-clock",
+    "top": "digital_clock",
+    "testbench": "tb_lab5"
+  },
+  "6": {
+    "directory": "projects/lab06-keypad",
+    "top": "top_keypad_system",
+    "testbench": "tb_lab6"
+  },
+  "7": {
+    "directory": "projects/lab07-digital-device",
+    "top": "top_lab7",
+    "testbench": "tb_lab7"
+  }
+}
